@@ -8,9 +8,9 @@ try {
 } catch {}
 const ping = require("../commands/ping")
 try {
-    module.exports = (client, message) => {
+    module.exports = (client, message, msg) => {
         if (message.content.startsWith("ping")) {
-            return ping(message)
+            return ping(message, msg)
         }
     }
 } catch {}
