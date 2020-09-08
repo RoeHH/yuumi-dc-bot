@@ -9,4 +9,9 @@ fs.readdir("./events/", (err, files) => {
         client.on(eventName, (...args) => eventHandler(client, ...args))
     })
 })
+client.on("message", (msg) => {
+  if (msg.content === "ping") {
+    msg.reply("Pong!")
+  }
+})
 client.login(process.env.BOT_TOKEN)
