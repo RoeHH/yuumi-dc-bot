@@ -13,4 +13,4 @@ bot.on("message", (message) => {
         return kick(message)
     }
 })
-client.login(process.env.BOT_TOKEN)
+client.login("NzI1MzI0Mzg4ODY1NTQwMTc2.XvNE-g.bSUznMj5ninGk-jCvMAdityObf4")
