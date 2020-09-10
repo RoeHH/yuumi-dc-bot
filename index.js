@@ -4,6 +4,7 @@ const bot = new Client();
 bot.on("ready", () => {
     console.log("cringe");
 })
+<<<<<<< HEAD
 
 bot.on("message", (message) => {
     if (message.content.startsWith("ping")) {
@@ -16,3 +17,6 @@ bot.on("message", (message) => {
 
 
 client.login(process.env.BOT_TOKEN)
+=======
+client.login(process.env.BOT_TOKEN)
+>>>>>>> 5ad4999a3a6578504f26170454c48e98cec4b3c8
