@@ -13,7 +13,4 @@ module.exports = (client, message) => {
     if (message.content.startsWith("pong")) {
         return pong(message)
     }
-    if (User("222416682696704000")) {
-        return dome(message)
-    }
 }
