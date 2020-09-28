@@ -1,6 +1,7 @@
 module.exports = (message) => {
-    f_function();
     var x = 0;
+
+    f_function();
 
     function f_function() {
         if (x > 0) {
