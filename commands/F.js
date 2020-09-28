@@ -4,15 +4,21 @@ module.exports = (message) => {
     if (rand == 0) {
         message.channel.send('https://www.pinclipart.com/picdir/big/554-5544409_letter-facebook-clip-art-large-f-transparent-background.png');
     } else if (rand == 1) {
-        message.channel.send('https://www.pinclipart.com/pindetail/iwmibm_f-letter-png-clipart-photo-letter-f-in/#.X3F69gOdhAs.link');
+        message.channel.send('https://www.pinclipart.com/picdir/big/543-5436574_letter-f-to-trace-clipart.png');
     } else if (rand == 2) {
-        message.channel.send('https://www.pinclipart.com/pindetail/ioRwThx_huruf-f-icon-png-clipart/#.X3F7qzQ5LaY.link');
+        message.channel.send('https://www.pinclipart.com/picdir/big/48-487081_clipart-letter-f-f-letter-logo-png-transparent.png');
     } else if (rand == 3) {
-        message.channel.send('https://www.pinclipart.com/pindetail/iiJmRJi_610-x-981-2-letter-f-png-clipart/#.X3F777-EJD4.link');
+        message.channel.send('https://www.pinclipart.com/picdir/big/55-559390_f-letter-png-clipart-photo-letter-f-in.png');
     } else if (rand == 4) {
-        message.channel.send('https://www.pinclipart.com/pindetail/ibixwRi_letter-f-to-trace-clipart/#.X3F8i-BCqvk.link');
+        message.channel.send('https://www.pinclipart.com/picdir/big/450-4506516_monogram-letters-open-letter-f-initial-monogram-letter.png');
     } else if (rand == 5) {
-        message.channel.send('https://www.pinclipart.com/pindetail/ibimwTw_musical-symbol-of-letter-f-svg-png-icon/#.X3F8OjuwKmI.link');
+        message.channel.send('https://www.pinclipart.com/picdir/big/520-5208112_letter-case-f-calligraphy-ladin-alphabet-free-commercial.png');
+    } else if (rand == 6) {
+        message.channel.send('https: //www.pinclipart.com/picdir/big/581-5810588_huruf-f-icon-png-clipart.png');
+    } else if (rand == 7) {
+        message.channel.send('https: //www.pinclipart.com/picdir/big/376-3760009_610-x-981-2-letter-f-png-clipart.png');
+    } else if (rand == 8) {
+        message.channel.send('https: //www.pinclipart.com/picdir/big/544-5449107_musical-symbol-of-letter-f-svg-png-icon.png');
     } else {
         console.log("rand dos not match");
     }
