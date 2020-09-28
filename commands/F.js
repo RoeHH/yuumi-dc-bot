@@ -1,8 +1,8 @@
 module.exports = (message) => {
     f_function();
+    var x;
 
     function f_function() {
-        var x;
         if (x > 0) {
             clear = clear + 1;
         } else {
