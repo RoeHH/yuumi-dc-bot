@@ -3,7 +3,7 @@ module.exports = (message) => {
 
 
     function f_function() {
-        var clear = 0;
+        var clear;
         var rand = Math.floor(Math.random() * 10);
         console.log(rand);
         if (rand == 0) {
