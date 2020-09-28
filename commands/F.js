@@ -1,9 +1,8 @@
 module.exports = (message) => {
     f_function();
-
+    var clear = 0;
 
     function f_function() {
-        var clear = 0;
         var rand = Math.floor(Math.random() * 10);
         console.log(rand);
         if (rand == 0) {
