@@ -8,8 +8,7 @@ module.exports = (message) => {
         console.log(rand);
         if (rand == 0) {
             console.log("no F");
-            message.channel.send("!clear" + clear);
-            clear = 0;
+            message.channel.send("!clear " + clear);
         } else if (rand == 1) {
             message.channel.send('https://www.pinclipart.com/picdir/big/543-5436574_letter-f-to-trace-clipart.png');
             f_function();
