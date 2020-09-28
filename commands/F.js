@@ -1,5 +1,5 @@
 module.exports = (message) => {
-    var rand = Math.floor(Math.random() * 6);
+    var rand = Math.floor(Math.random() * 9);
     console.log(rand);
     if (rand == 0) {
         message.channel.send('https://www.pinclipart.com/picdir/big/554-5544409_letter-facebook-clip-art-large-f-transparent-background.png');
