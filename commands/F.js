@@ -1,11 +1,13 @@
 module.exports = (message) => {
     f_function();
-    var_function();
-
 
     function f_function() {
-        function var_function() {
+        var x = 0;
+        if (x > 0) {
+            clear = clear + 1;
+        } else {
             var clear = 0;
+            x = 1;
         }
         var rand = Math.floor(Math.random() * 10);
         console.log(rand);
@@ -42,6 +44,5 @@ module.exports = (message) => {
         } else {
             console.log("kaput");
         }
-        clear = clear + 1;
     }
 }
