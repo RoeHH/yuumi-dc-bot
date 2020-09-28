@@ -14,11 +14,11 @@ module.exports = (message) => {
     } else if (rand == 5) {
         message.channel.send('https://www.pinclipart.com/picdir/big/520-5208112_letter-case-f-calligraphy-ladin-alphabet-free-commercial.png');
     } else if (rand == 6) {
-        message.channel.send('https: //www.pinclipart.com/picdir/big/581-5810588_huruf-f-icon-png-clipart.png');
+        message.channel.send('https://www.pinclipart.com/picdir/big/581-5810588_huruf-f-icon-png-clipart.png');
     } else if (rand == 7) {
-        message.channel.send('https: //www.pinclipart.com/picdir/big/376-3760009_610-x-981-2-letter-f-png-clipart.png');
+        message.channel.send('https://www.pinclipart.com/picdir/big/376-3760009_610-x-981-2-letter-f-png-clipart.png');
     } else if (rand == 8) {
-        message.channel.send('https: //www.pinclipart.com/picdir/big/544-5449107_musical-symbol-of-letter-f-svg-png-icon.png');
+        message.channel.send('https://www.pinclipart.com/picdir/big/544-5449107_musical-symbol-of-letter-f-svg-png-icon.png');
     } else {
         console.log("rand dos not match");
     }
