@@ -2,7 +2,7 @@ module.exports = (message) => {
     f_function();
 
     function f_function() {
-        var x = 0;
+        var x;
         if (x > 0) {
             clear = clear + 1;
         } else {
