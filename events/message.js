@@ -18,5 +18,7 @@ module.exports = (client, message) => {
     if (message.content.startsWith("F")) {
         return F(message);
     }
-
+    if (message.content.startsWith("!plays")) {
+        message.react(":musical_note:");
+    }
 }
