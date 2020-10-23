@@ -3,7 +3,7 @@ const { User } = require("discord.js")
 const ping = require("../commands/ping.js")
 const pong = require("../commands/pong.js")
 const avatar = require("../commands/avatar.js")
-
+const moonroons = require("../commands/moonroons.js")
 
 module.exports = (client, message) => {
     if (message.content.startsWith("ping")) {
@@ -15,8 +15,10 @@ module.exports = (client, message) => {
     if (message.content.startsWith("avatar?")) {
         return avatar(message);
     }
-
     if (message.content.startsWith("!play")) {
         message.react(":musical_note:");
+    }
+    if (message.content.startsWith(":m")) {
+        return moonroons(message);
     }
 }
