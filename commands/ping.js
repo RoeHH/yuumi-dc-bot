@@ -1,3 +1,3 @@
 module.exports = (message) => {
-    return message.reply(`Pong`);
+    message.channel.send('Pong!');
 }
