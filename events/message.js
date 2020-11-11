@@ -24,4 +24,5 @@ module.exports = (client, message) => {
     if (message.content.startsWith("translate:")) {
         return translate(message);
     }
+    //Number Game
 }
