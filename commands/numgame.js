@@ -15,10 +15,10 @@ module.exports = (message) => {
             gameIsRuning = false
         } else if (message.content < randomnumber) {
             tries++;
-            message.channel.send("To low")
+            message.channel.send("Too low")
         } else {
             tries++;
-            message.channel.send("To high")
+            message.channel.send("Too high")
         }
     }
 };
