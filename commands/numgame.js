@@ -5,7 +5,7 @@ module.exports = (message) => {
             gameIsRuning = true;
             message.channel.send('Guess the number between 1 and 100');
             tries = 1;
-            randomnumber = Math.round(Math.random() * 100);
+            randomnumber = Math.round(Math.random() * 100 + 1);
         } else {
             message.channel.send('The game is still runing');
         }

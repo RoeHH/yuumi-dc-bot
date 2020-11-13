@@ -23,7 +23,7 @@ module.exports = (client, message) => {
     if (message.content.startsWith("!stop")) {
         return stop(message);
     }
-    if (message.content.startsWith("randomnumber")) {
+    if (message.content.startsWith("randomnum")) {
         return randomnumber(message);
     }
     //Translations
