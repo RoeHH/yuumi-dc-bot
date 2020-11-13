@@ -58,4 +58,7 @@ module.exports = (client, message) => {
         console.log(h);
         message.channel.send(h);
     }
+        if (message.content.startsWith("LICENSE")) {
+        message.channel.send("http://www.wtfpl.net/txt/copying/");
+    }
 }
