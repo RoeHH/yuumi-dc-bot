@@ -1,7 +1,5 @@
 const { User, GuildChannelManager } = require("discord.js")
 
-const ping = require("../commands/ping.js")
-const pong = require("../commands/pong.js")
 const avatar = require("../commands/avatar.js")
 const translate = require("../commands/translate.js")
 const stop = require("../commands/stop.js")
@@ -25,10 +23,10 @@ module.exports = (client, message) => {
     }
     if (message.author.bot) return;
     if (message.content.toLowerCase().startsWith("ping")) {
-        return ping(message);
+        message.channel.send('Pong!');
     }
     if (message.content.toLowerCase().startsWith("pong")) {
-        return pong(message, client);
+        message.channel.send('Ping!');
     }
     if (message.content.startsWith("avatar?")) {
         return avatar(message);
@@ -58,7 +56,7 @@ module.exports = (client, message) => {
         console.log(h);
         message.channel.send(h);
     }
-        if (message.content.startsWith("LICENSE")) {
+    if (message.content.startsWith("LICENSE")) {
         message.channel.send("http://www.wtfpl.net/txt/copying/");
     }
 }
