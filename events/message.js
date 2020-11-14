@@ -8,6 +8,7 @@ const stop = require("../commands/stop.js")
 const numgame = require("../commands/numgame.js")
 const randomnumber = require("../commands/randomnumber.js")
 const F = require("../commands/F.js")
+const serverstats = require("../commands/serverstats.js")
 
 
 
@@ -58,7 +59,10 @@ module.exports = (client, message) => {
         console.log(h);
         message.channel.send(h);
     }
-        if (message.content.startsWith("LICENSE")) {
+    if (message.content.startsWith("LICENSE")) {
         message.channel.send("http://www.wtfpl.net/txt/copying/");
+    }
+    if (message.content.startsWith("serverstats")) {
+        return serverstats(message)
     }
 }
