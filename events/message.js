@@ -7,6 +7,7 @@ const numgame = require("../commands/numgame.js")
 const randomnumber = require("../commands/randomnumber.js")
 const F = require("../commands/F.js")
 const serverstats = require("../commands/serverstats.js")
+const opgg = require("../commands/opgg.js")
 
 
 
@@ -62,5 +63,8 @@ module.exports = (client, message) => {
     }
     if (message.content.startsWith("serverstats")) {
         return serverstats(message)
+    }
+    if (message.content.startsWith("https://euw.op.gg/summoner/userName=roehh")) {
+        return opgg(message)
     }
 }
