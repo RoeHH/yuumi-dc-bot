@@ -64,7 +64,7 @@ module.exports = (client, message) => {
     if (message.content.startsWith("serverstats")) {
         return serverstats(message)
     }
-    if (message.content.startsWith("https://euw.op.gg/summoner/userName=roehh")) {
+    if (message.content.startsWith("lol")) {
         return opgg(message)
     }
 }
