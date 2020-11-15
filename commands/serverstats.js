@@ -1,7 +1,6 @@
 module.exports = (message) => {
-    botCount = message.guild.premiumSubscriptionCount;
-    memberCount = message.guild.memberCount - botCount;
+    memberCount = message.guild.memberCount;
     guildName = message.guild.name;
-    serverRegion = message.guild.region;
-    message.channel.send("          " + guildName + "                                   " + botCount);
+    guildRegion = message.guild.region;
+    message.channel.send(guildName + ":\nRegion: " + guildRegion + "\nMembers: " + memberCount);
 }
