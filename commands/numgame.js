@@ -11,7 +11,6 @@ module.exports = (message) => {
         }
     } else {
         if (message.content == randomnumber) {
-            message.channel.send("delete " + tries*2);
             message.channel.send("Perfect you needed " + tries + " tries");
             gameIsRuning = false
         } else if (message.content < randomnumber) {
