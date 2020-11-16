@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
 module.exports = async(message) => {
-    const browser = await puppeteer.launch({ headless: true }{ args: ['--no-sandbox'] });
+    const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     await page.setViewport({ width: 1920, height: 2800 });
     if (message.content.slice(3, 4) == "r") {
