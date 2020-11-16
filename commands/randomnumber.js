@@ -1,5 +1,5 @@
 module.exports = (message) => {
-    var maxSize = message.content.slice(16, 25);
+    var maxSize = message.content.slice(13, 25);
     if (isNaN(message.content)) {
         message.channel.send("Bitte gebe eine Zahl hinter randomnumber ein")
     } else {
