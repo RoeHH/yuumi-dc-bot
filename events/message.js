@@ -51,7 +51,7 @@ module.exports = (client, message) => {
         return numgame(message);
     }
     if (message.content.startsWith("F")) {
-        return F(message);
+        // return F(message);
     }
     if (message.content.startsWith("chanelid")) {
         h = message.channel.id;
