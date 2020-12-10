@@ -8,6 +8,7 @@ const randomnumber = require("../commands/randomnumber.js")
 const F = require("../commands/F.js")
 const serverstats = require("../commands/serverstats.js")
 const opgg = require("../commands/opgg.js")
+const list = require("../commands/lists.js")
 
 
 
@@ -38,6 +39,9 @@ module.exports = (client, message) => {
     }
     if (message.content.startsWith("randomnumber")) {
         return randomnumber(message);
+    }
+    if (message.content.startsWith("list")) {
+        return list(message);
     }
     //Translations
     if (message.content.startsWith("translate:")) {
