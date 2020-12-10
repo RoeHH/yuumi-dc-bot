@@ -4,11 +4,7 @@ module.exports = async(message) => {
         if (err) return console.log(err);
         //g = res.body[0];
         //console.log(g.name);
-        for (i = 0; i < 4; i++) {
-            console.log(body[i].name);
-            message.channel.send(body[i].name);
-        }
-
-
+        console.log(body);
+        message.channel.send("```json\n" + JSON.stringify(body, null, 2) + "```");
     });
 }
