@@ -1,7 +1,16 @@
 const puppeteer = require('puppeteer');
 
 module.exports = async(message) => {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ 
+        args: [
+        // Required for Docker version of Puppeteer
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        // This will write shared memory files into /tmp instead of /dev/shm,
+        // because Docker’s default for /dev/shm is 64MB
+        '--disable-dev-shm-usage'
+        ]
+    });
     const page = await browser.newPage();
     await page.setViewport({ width: 1920, height: 2800 });
     if (message.content.slice(3, 4) == "r") {
