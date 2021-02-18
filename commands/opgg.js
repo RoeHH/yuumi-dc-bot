@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-
+i = 0;
 module.exports = async(message) => {
     const browser = await puppeteer.launch({ 
         args: [
